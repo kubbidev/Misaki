@@ -1,0 +1,27 @@
+# Token used when set to release build.
+token: '00'
+
+presence:
+  # Setting up the activity of the Bot.
+  activity: '%guilds% Servers. (#%shard%)'
+  # Setting up the status of the Bot.
+  # Currently available:
+  # - ONLINE
+  # - IDLE
+  # - DO_NOT_DISTURB
+  # - INVISIBLE
+  # - OFFLINE
+  status: 'ONLINE'
+  # Setting up the type of presence for the Bot.
+  # Currently available:
+  # - PLAYING
+  # - STREAMING
+  # - LISTENING
+  # - WATCHING
+  # - COMPETING
+  type: 'PLAYING'
+  # Optional url for STREAMING state
+  url: 'https://twitch.tv/'
+
+# The shard amount of the bot. Check out https://anidiots.guide/understanding/sharding/#sharding for more information.
+shards: 1

@@ -11,6 +11,7 @@ import com.kubbidev.renapowered.command.interfaces.Command;
 import com.kubbidev.renapowered.misaki.command.fun.AvatarCommand;
 import com.kubbidev.renapowered.misaki.command.fun.PingCommand;
 import com.kubbidev.renapowered.misaki.command.info.AboutCommand;
+import com.kubbidev.renapowered.misaki.command.info.InviteCommand;
 import com.kubbidev.renapowered.misaki.command.mod.*;
 import com.kubbidev.renapowered.misaki.config.ConfigKeys;
 import com.kubbidev.renapowered.misaki.listener.ConnectionListener;
@@ -25,10 +26,10 @@ import java.util.Set;
 
 @Plugin(
         id = "renapowered-misaki",
-        name = "RenaPowered (Misaki)",
+        name = "Misaki",
         version = "1.0.0",
         description = "Misaki is a simple but powerful Discord bot used to enhance your Discord experience.",
-        url = "https://discord.gg/tXrZY2SXKK",
+        url = "https://discord.kubbidev.com/",
         authors = "kubbidev"
 )
 public class Misaki extends RenaPowered<Misaki> {
@@ -115,7 +116,8 @@ public class Misaki extends RenaPowered<Misaki> {
                 BanCommand.class,
                 KickCommand.class,
                 UnbanCommand.class,
-                PingCommand.class
+                PingCommand.class,
+                InviteCommand.class
         );
     }
 

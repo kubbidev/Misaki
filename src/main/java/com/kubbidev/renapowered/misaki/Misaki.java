@@ -117,7 +117,8 @@ public class Misaki extends RenaPowered<Misaki> {
                 KickCommand.class,
                 UnbanCommand.class,
                 PingCommand.class,
-                InviteCommand.class
+                InviteCommand.class,
+                EmbedCommand.class
         );
     }
 

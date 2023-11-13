@@ -3,9 +3,8 @@ package com.kubbidev.renapowered.misaki;
 import com.google.common.collect.ImmutableSet;
 import com.kubbidev.javatoolbox.config.generic.adapter.ConfigurationAdapter;
 import com.kubbidev.javatoolbox.config.generic.key.ConfigKey;
-import com.kubbidev.renapowered.Plugin;
-import com.kubbidev.renapowered.PluginDescription;
 import com.kubbidev.renapowered.RenaConfigAdapter;
+import com.kubbidev.renapowered.RenaLoader;
 import com.kubbidev.renapowered.RenaPowered;
 import com.kubbidev.renapowered.command.interfaces.Command;
 import com.kubbidev.renapowered.misaki.command.fun.AvatarCommand;
@@ -24,14 +23,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.Set;
 
-@Plugin(
-        id = "renapowered-misaki",
-        name = "Misaki",
-        version = "1.0.0",
-        description = "Misaki is a simple but powerful Discord bot used to enhance your Discord experience.",
-        url = "https://discord.kubbidev.com/",
-        authors = "kubbidev"
-)
 public class Misaki extends RenaPowered<Misaki> {
 
     public static Misaki INSTANCE;
@@ -42,11 +33,7 @@ public class Misaki extends RenaPowered<Misaki> {
      * @param args the arguments to the bot
      */
     public static void main(String[] args) {
-        RenaPowered.loadInstance(Misaki.class);
-    }
-
-    public Misaki(@NotNull PluginDescription description) {
-        super(description);
+        RenaLoader.startInstance();
     }
 
     @Override
@@ -82,8 +69,8 @@ public class Misaki extends RenaPowered<Misaki> {
 
     @Override
     public void registerListeners(@NotNull Set<ListenerAdapter> listeners) {
-        listeners.add(new ConnectionListener(getLogger()));
-        listeners.add(new GuildListener(getLogger()));
+        listeners.add(new ConnectionListener(getLoggerAdapter()));
+        listeners.add(new GuildListener(getLoggerAdapter()));
     }
 
     @Override

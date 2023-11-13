@@ -10,6 +10,8 @@
 
     <name>Misaki</name>
     <description>Misaki is a simple but powerful Discord bot used to enhance your Discord experience.</description>
+
+    <url>https://discord.kubbidev.com/</url>
     <properties>
         <downloadSources>false</downloadSources>
         <downloadJavadocs>false</downloadJavadocs>

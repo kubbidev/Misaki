@@ -1,6 +1,6 @@
 package com.kubbidev.renapowered.misaki.listener;
 
-import com.kubbidev.javatoolbox.logging.PluginLogger;
+import com.kubbidev.javatoolbox.logging.LoggerAdapter;
 import net.dv8tion.jda.api.events.guild.GuildJoinEvent;
 import net.dv8tion.jda.api.events.guild.GuildLeaveEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -8,9 +8,9 @@ import org.jetbrains.annotations.NotNull;
 
 public class GuildListener extends ListenerAdapter {
 
-    private final PluginLogger logger;
+    private final LoggerAdapter logger;
 
-    public GuildListener(PluginLogger logger) {
+    public GuildListener(LoggerAdapter logger) {
         this.logger = logger;
     }
 

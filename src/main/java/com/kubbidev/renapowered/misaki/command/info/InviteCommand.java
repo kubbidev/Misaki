@@ -57,7 +57,7 @@ public class InviteCommand implements Command<Misaki> {
                 .append(TranslationManager.render("misaki.command.invite.label.invite-link", locale))
                 .append(" :**")
                 .append(' ');
-        stringBuilder.append(Misaki.INSTANCE.getUrl().orElse("https://discord.gg/"));
+        stringBuilder.append(Misaki.INSTANCE.getDescription().getUrl().orElse("https://discord.gg/"));
 
         builder.addEmbeds(new EmbedBuilder()
                 .setTitle(title)
@@ -74,7 +74,7 @@ public class InviteCommand implements Command<Misaki> {
 
         builder.addActionRow(Button.of(
                 ButtonStyle.LINK,
-                Misaki.INSTANCE.getUrl().orElse("https://discord.gg/"),
+                Misaki.INSTANCE.getDescription().getUrl().orElse("https://discord.gg/"),
                 TranslationManager.render("misaki.command.invite.label.invite", locale),
                 Emoji.fromUnicode("\uD83D\uDCE9")
         ));

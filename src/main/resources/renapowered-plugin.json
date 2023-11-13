@@ -1,0 +1,11 @@
+{
+  "id": "renapowered-misaki",
+  "name": "Misaki",
+  "version": "${project.version}",
+  "description": "${project.description}",
+  "url": "${project.url}",
+  "authors": [
+    "kubbidev"
+  ],
+  "main": "com.kubbidev.renapowered.misaki.Misaki"
+}

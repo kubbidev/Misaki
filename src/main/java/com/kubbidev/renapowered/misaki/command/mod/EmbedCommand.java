@@ -11,7 +11,6 @@ import com.kubbidev.renapowered.locale.TranslationManager;
 import com.kubbidev.renapowered.misaki.Misaki;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.Permission;
-import net.dv8tion.jda.api.exceptions.ParsingException;
 import net.dv8tion.jda.api.interactions.commands.DefaultMemberPermissions;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
